@@ -46,11 +46,11 @@ export class AuthService {
     }
   }
 
-  async logout(){
+  async logout() {
     try {
-        return await this.account.deleteSessions()
+      return await this.account.deleteSessions();
     } catch (error) {
-        throw error
+      throw error;
     }
   }
 }
